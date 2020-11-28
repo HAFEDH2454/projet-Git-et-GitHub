@@ -1,0 +1,99 @@
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again
+$ mkdir learn_git_again
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again
+$ cd learn_git_again
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again
+$ touch third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again
+$ git init
+Initialized empty Git repository in E:/projet github/learn_git_again/learn_git_again/.git/
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git add third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) 964f1bc] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git log
+commit 964f1bc2181090c37e7781724e4264f48e6694ad (HEAD -> master)
+Author: HAFEDH2454 <hbouzghgaya@gmail.com>
+Date:   Sat Nov 28 15:02:38 2020 +0100
+
+    adding third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ touch fourth.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git add fourth.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git commit -m "adding fourth.txt"
+[master eade73d] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ rm third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git add third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git commit -m "removing third.txt"
+[master 0df18cd] removing third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git log
+commit 0df18cd105127b9d28a32ad4e38813758a02ae40 (HEAD -> master)
+Author: HAFEDH2454 <hbouzghgaya@gmail.com>
+Date:   Sat Nov 28 15:03:29 2020 +0100
+
+    removing third.txt
+
+commit eade73d0a18dbe796c952c5548684198c71fc06a
+Author: HAFEDH2454 <hbouzghgaya@gmail.com>
+Date:   Sat Nov 28 15:03:06 2020 +0100
+
+    adding fourth.txt
+
+commit 964f1bc2181090c37e7781724e4264f48e6694ad
+Author: HAFEDH2454 <hbouzghgaya@gmail.com>
+Date:   Sat Nov 28 15:02:38 2020 +0100
+
+    adding third.txt
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git config --global core.pager "cat"
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ - git config --global --list
+bash: -: command not found
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ - git config --global --list
+bash: -: command not found
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
+$ git config --global --list
+user.name=HAFEDH2454
+user.email=hbouzghgaya@gmail.com
+core.pager=cat
+
+latitude@latitude-PC MINGW32 /e/projet github/learn_git_again/learn_git_again (master)
